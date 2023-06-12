@@ -2,6 +2,7 @@
 
 #include "rlgl.h"
 #include "raymath.h"
+#include "HitBox.h"
 
 //------------------------------------------------------------------------------------
 // Program main entry point
