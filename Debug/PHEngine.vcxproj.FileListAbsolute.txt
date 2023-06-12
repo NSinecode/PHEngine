@@ -1,0 +1,3 @@
+C:\Users\prikh\source\repos\PHEngine\Debug\PHEngine.vcxproj.CopyComplete
+C:\Users\prikh\source\repos\PHEngine\Debug\PHEngine.exe
+C:\Users\prikh\source\repos\PHEngine\Debug\raylib.dll
