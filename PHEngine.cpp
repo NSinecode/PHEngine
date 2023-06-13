@@ -1,5 +1,4 @@
 ﻿#include "raylib.h"
-
 #include "rlgl.h"
 #include "raymath.h"
 #include "HitBox.h"
@@ -14,7 +13,7 @@ int main()
     const int screenWidth = 800;
     const int screenHeight = 450;
 
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - 2d camera mouse zoom");
+    InitWindow(screenWidth, screenHeight, "PHEngine");
 
     Camera2D camera = { 0 };
     camera.zoom = 1.0f;

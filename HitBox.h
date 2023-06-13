@@ -1,9 +1,11 @@
 #pragma once 
 #include "raylib.h"
-#include "HitBox.cpp"
+//#include "HitBox.cpp"
 #include <string>
 #include <cmath>
 
+//cmath overdrives
+float pow(const float num, int exp);
 
 //About Angles
 Vector2 RealASin(float sinA);
@@ -15,6 +17,7 @@ class Point
 public:
 	Point();
 	Point(Vector2 Position);
+	Point(Vector2 Position, Vector2 CenterPosition);
 
 	//Setters and Getters
 	void SetV(float V);
@@ -22,19 +25,17 @@ public:
 	void SetCenterPosition(Vector2 CenterPosition);
 	float GetV();
 	float GetVcircle();
+	Vector2 GetPosition();
 	Vector2 GetCenterPosition();
+	Vector2 GetPhPosition();
+
+	void RotateAroundCenter(float A);
+	void RotateAroundCenter(Vector2 CenterPosition, float A);
+
+	Vector2 TransformPh2Norm();
+
 
 private:
-
-	// For rotation around center
-	class PhantomPoint
-	{
-	public:
-		Vector2 PhPosition;
-
-		PhantomPoint(Vector2 Position, Vector2 CenterPosition);
-	};
-
 	float V, Vcircle;
-	Vector2 Position, CenterPosition;
+	Vector2 Position, CenterPosition, PhPosition;
 };
