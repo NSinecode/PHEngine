@@ -61,7 +61,7 @@ int main()
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
-        ClearBackground(BLACK);
+        ClearBackground(WHITE);
 
         BeginMode2D(camera);
 
@@ -70,11 +70,11 @@ int main()
         rlPushMatrix();
         rlTranslatef(0, 25 * 50, 0);
         rlRotatef(90, 1, 0, 0);
-        //DrawGrid(1000, 100);
+        //DrawGrid(200, 1000);
         rlPopMatrix();
 
         // Draw a reference circle
-        DrawCircle(100, 100, 50, YELLOW);
+        DrawCircle(0, 100, 50, YELLOW);
 
         EndMode2D();
 
