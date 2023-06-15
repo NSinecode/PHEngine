@@ -1,6 +1,7 @@
 #include "HitBox.h"
 #include <cmath>
 #include "raylib.h"
+#include <iostream>
 
 float pow(const float num, int exp)
 {
@@ -201,9 +202,11 @@ SimpleHitBox::SimpleHitBox(Point MinXMinY, Point MaxXMaxY)
 {
 	this->MinXMinY.SetPosition(MinXMinY.GetPosition());
 	this->MaxXMaxY.SetPosition(MaxXMaxY.GetPosition());
+	width = MaxXMaxY.GetPosition().x - MinXMinY.GetPosition().x;
+	height = MaxXMaxY.GetPosition().y - MinXMinY.GetPosition().y;
 	Vector2 a;
-	a.x = MaxXMaxY.GetPosition().x - MinXMinY.GetPosition().x;
-	a.y = MaxXMaxY.GetPosition().y - MinXMinY.GetPosition().y;
+	a.x = MinXMinY.GetPosition().x + width / 2;
+	a.y = MinXMinY.GetPosition().y + height / 2;
 	Center = a;
 }
 
@@ -211,9 +214,11 @@ SimpleHitBox::SimpleHitBox(Point MinXMinY, Vector2 Center)
 {
 	this->MinXMinY.SetPosition(MinXMinY.GetPosition());
 	this->Center = Center;
+	width = (Center.x - MinXMinY.GetPosition().x) * 2;
+	height = (Center.y - MinXMinY.GetPosition().y) * 2;
 	Vector2 a;
-	a.x = (Center.x - MinXMinY.GetPosition().x) * 2;
-	a.y = (Center.y - MinXMinY.GetPosition().y) * 2;
+	a.x = Center.x + width / 2;
+	a.y = Center.y + height / 2;
 	MaxXMaxY.SetPosition(a);
 }
 
@@ -221,15 +226,39 @@ SimpleHitBox::SimpleHitBox(Vector2 Center, Point MaxXMaxY)
 {
 	this->MaxXMaxY.SetPosition(MaxXMaxY.GetPosition());
 	this->Center = Center;
+	width = (-Center.x + MaxXMaxY.GetPosition().x) * 2;
+	height = (-Center.y + MaxXMaxY.GetPosition().y) * 2;
 	Vector2 a;
-	a.x = (-Center.x + MinXMinY.GetPosition().x) * 2;
-	a.y = (-Center.y + MinXMinY.GetPosition().y) * 2;
-	MaxXMaxY.SetPosition(a);
+	a.x = Center.x - width / 2;
+	a.y = Center.y - height / 2;
+	MinXMinY.SetPosition(a);
 }
 
 SimpleHitBox::SimpleHitBox(Vector2 Center, float width, float height)
 {
+	try
+	{
+		if (width)
+			this->width = width;
+		throw "width = 0";
+	}
+	catch(...)
+	{
+		std::cout << "ERROR" << std::endl;
+	}
+	try
+	{
+		if (height)
+			this->width = height;
+		throw "height = 0";
+	}
+	catch (...)
+	{
+		std::cout << "ERROR" << std::endl;
+	}
 	this->Center = Center;
+	this->width = width;
+	this->height = height;
 	Vector2 a, b;
 	a.x = Center.x - width / 2;
 	a.y = Center.y - height / 2;
@@ -252,6 +281,13 @@ void SimpleHitBox::SetMaxXMaxY(Point MaxXMaxY)
 void SimpleHitBox::SetCenter(Vector2 Center)
 {
 	this->Center = Center;
+	Vector2 a, b;
+	a.x = Center.x - width / 2;
+	a.y = Center.y - height / 2;
+	b.x = Center.x + width / 2;
+	b.y = Center.y + height / 2;
+	MinXMinY.SetPosition(a);
+	MaxXMaxY.SetPosition(b);
 }
 
 Point SimpleHitBox::GetMinXMinY()

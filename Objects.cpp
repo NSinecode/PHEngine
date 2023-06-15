@@ -15,7 +15,7 @@ Vector2 TransformPos2CPos(Point pos)
 
 Button::Button()
 {
-    Center.x = Center.y = width = height = 0;
+    Center.x = Center.y = width = height = mode = 0;
 }
 
 Button::Button(Vector2 Center, float width, float height)
@@ -25,6 +25,16 @@ Button::Button(Vector2 Center, float width, float height)
     this->height = height;
     SimpleHitBox a(Center, width, height);
     HitBox = a;
+}
+
+Button::Button(Vector2 Center, float width, float height, int mode)
+{
+    this->Center = Center;
+    this->width = width;
+    this->height = height;
+    SimpleHitBox a(Center, width, height);
+    HitBox = a;
+    this->mode = mode;
 }
 
 Button::Button(Vector2 Center, float width, float height, std::string title)
@@ -37,6 +47,17 @@ Button::Button(Vector2 Center, float width, float height, std::string title)
     this->title = title;
 }
 
+Button::Button(Vector2 Center, float width, float height, std::string title, int mode)
+{
+    this->Center = Center;
+    this->width = width;
+    this->height = height;
+    SimpleHitBox a(Center, width, height);
+    HitBox = a;
+    this->title = title;
+    this->mode = mode;
+}
+
 Button::Button(Vector2 Center, float width, float height, Image texture)
 {
     this->Center = Center;
@@ -45,6 +66,17 @@ Button::Button(Vector2 Center, float width, float height, Image texture)
     SimpleHitBox a(Center, width, height);
     HitBox = a;
     this->texture = texture;
+}
+
+Button::Button(Vector2 Center, float width, float height, Image texture, int mode)
+{
+    this->Center = Center;
+    this->width = width;
+    this->height = height;
+    SimpleHitBox a(Center, width, height);
+    HitBox = a;
+    this->texture = texture;
+    this->mode = mode;
 }
 
 Button::Button(Vector2 Center, float width, float height, std::string title, Image texture)
@@ -56,6 +88,18 @@ Button::Button(Vector2 Center, float width, float height, std::string title, Ima
     HitBox = a;
     this->title = title;
     this->texture = texture;
+}
+
+Button::Button(Vector2 Center, float width, float height, std::string title, Image texture, int mode)
+{
+    this->Center = Center;
+    this->width = width;
+    this->height = height;
+    SimpleHitBox a(Center, width, height);
+    HitBox = a;
+    this->title = title;
+    this->texture = texture;
+    this->mode = mode;
 }
 
 void Button::SetButtonHitBox(SimpleHitBox HitBox)
@@ -94,6 +138,11 @@ void Button::SetWidthAndHeight(float width, float height)
     this->height = height;
 }
 
+void Button::SetMode(int mode)
+{
+    this->mode = mode;
+}
+
 SimpleHitBox Button::GetHitBox()
 {
     return HitBox;
@@ -123,3 +172,9 @@ float Button::GetHeight()
 {
     return height;
 }
+
+int Button::GetMode()
+{
+    return mode;
+}
+

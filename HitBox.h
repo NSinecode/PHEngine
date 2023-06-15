@@ -67,4 +67,5 @@ public:
 private:
 	Point MinXMinY, MaxXMaxY;
 	Vector2 Center;
+	float width = NULL,  height = NULL;
 };
