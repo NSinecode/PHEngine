@@ -1,21 +1,9 @@
 #include "Objects.h"
 
-Vector2 TransformPos2CPos(Vector2 pos)
-{
-    pos.y *= -1;
-    return pos;
-}
-
-Vector2 TransformPos2CPos(Point pos)
-{
-    Vector2 a = pos.GetPosition();
-    a.y *= -1;
-    return a;
-}
-
 Button::Button()
 {
     Center.x = Center.y = width = height = mode = 0;
+    this->texture = GenImageColor(width, height, GRAY);
 }
 
 Button::Button(Vector2 Center, float width, float height)
@@ -25,6 +13,7 @@ Button::Button(Vector2 Center, float width, float height)
     this->height = height;
     SimpleHitBox a(Center, width, height);
     HitBox = a;
+    this->texture = GenImageColor(width, height, GRAY);
 }
 
 Button::Button(Vector2 Center, float width, float height, int mode)
@@ -35,6 +24,7 @@ Button::Button(Vector2 Center, float width, float height, int mode)
     SimpleHitBox a(Center, width, height);
     HitBox = a;
     this->mode = mode;
+    this->texture = GenImageColor(width, height, GRAY);
 }
 
 Button::Button(Vector2 Center, float width, float height, std::string title)
@@ -45,6 +35,7 @@ Button::Button(Vector2 Center, float width, float height, std::string title)
     SimpleHitBox a(Center, width, height);
     HitBox = a;
     this->title = title;
+    this->texture = GenImageColor(width, height, GRAY);
 }
 
 Button::Button(Vector2 Center, float width, float height, std::string title, int mode)
@@ -56,50 +47,56 @@ Button::Button(Vector2 Center, float width, float height, std::string title, int
     HitBox = a;
     this->title = title;
     this->mode = mode;
+    this->texture = GenImageColor(width, height, GRAY);
 }
 
-Button::Button(Vector2 Center, float width, float height, Image texture)
-{
-    this->Center = Center;
-    this->width = width;
-    this->height = height;
-    SimpleHitBox a(Center, width, height);
-    HitBox = a;
-    this->texture = texture;
-}
+//Button::Button(Vector2 Center, float width, float height, Image texture)
+//{
+//    this->Center = Center;
+//    this->width = width;
+//    this->height = height;
+//    SimpleHitBox a(Center, width, height);
+//    HitBox = a;
+//    this->texture = texture;
+//}
+//
+//Button::Button(Vector2 Center, float width, float height, Image texture, int mode)
+//{
+//    this->Center = Center;
+//    this->width = width;
+//    this->height = height;
+//    SimpleHitBox a(Center, width, height);
+//    HitBox = a;
+//    this->texture = texture;
+//    this->mode = mode;
+//}
+//
+//Button::Button(Vector2 Center, float width, float height, std::string title, Image texture)
+//{
+//    this->Center = Center;
+//    this->width = width;
+//    this->height = height;
+//    SimpleHitBox a(Center, width, height);
+//    HitBox = a;
+//    this->title = title;
+//    this->texture = texture;
+//}
+//
+//Button::Button(Vector2 Center, float width, float height, std::string title, Image texture, int mode)
+//{
+//    this->Center = Center;
+//    this->width = width;
+//    this->height = height;
+//    SimpleHitBox a(Center, width, height);
+//    HitBox = a;
+//    this->title = title;
+//    this->texture = texture;
+//    this->mode = mode;
+//}
 
-Button::Button(Vector2 Center, float width, float height, Image texture, int mode)
+Button::~Button()
 {
-    this->Center = Center;
-    this->width = width;
-    this->height = height;
-    SimpleHitBox a(Center, width, height);
-    HitBox = a;
-    this->texture = texture;
-    this->mode = mode;
-}
-
-Button::Button(Vector2 Center, float width, float height, std::string title, Image texture)
-{
-    this->Center = Center;
-    this->width = width;
-    this->height = height;
-    SimpleHitBox a(Center, width, height);
-    HitBox = a;
-    this->title = title;
-    this->texture = texture;
-}
-
-Button::Button(Vector2 Center, float width, float height, std::string title, Image texture, int mode)
-{
-    this->Center = Center;
-    this->width = width;
-    this->height = height;
-    SimpleHitBox a(Center, width, height);
-    HitBox = a;
-    this->title = title;
-    this->texture = texture;
-    this->mode = mode;
+    UnloadImage(texture);
 }
 
 void Button::SetButtonHitBox(SimpleHitBox HitBox)
@@ -178,3 +175,25 @@ int Button::GetMode()
     return mode;
 }
 
+
+
+void TriggerButton::CheckJob(Vector2 MousePos, Trigger& other)
+{
+    if (GetHitBox().CheckMouse(MousePos))
+    {
+        Image* texture = new Image(GetTexture());
+        ImageColorReplace(texture, GRAY, GREEN);
+        if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+        {
+            other.Job();
+        }
+
+        delete texture;
+    }
+    else
+    {
+        Image* texture = new Image(GetTexture());
+        ImageColorReplace(texture, GREEN, GRAY);
+        delete texture;
+    }
+}

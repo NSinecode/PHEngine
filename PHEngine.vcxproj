@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Addons.cpp" />
     <ClCompile Include="HitBox.cpp" />
     <ClCompile Include="Objects.cpp" />
     <ClCompile Include="PHEngine.cpp" />
@@ -148,6 +149,7 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Addons.h" />
     <ClInclude Include="HitBox.h" />
     <ClInclude Include="Objects.h" />
   </ItemGroup>

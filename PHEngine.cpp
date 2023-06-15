@@ -2,14 +2,15 @@
 #include "rlgl.h"
 #include "raymath.h"
 #include "HitBox.h"
+#include "Objects.h"
+#include "Addons.h"
 
 //------------------------------------------------------------------------------------
 // Program main entry point
 //------------------------------------------------------------------------------------
 int main()
 {
-    // Initialization
-    //--------------------------------------------------------------------------------------
+    
     const int screenWidth = 800;
     const int screenHeight = 450;
 
@@ -18,13 +19,17 @@ int main()
     Camera2D camera = { 0 };
     camera.zoom = 1.0f;
 
-    SetTargetFPS(60);                   // Set our game to run at 60 frames-per-second
-    //--------------------------------------------------------------------------------------
+    SetTargetFPS(60);
+
+    TriggerButton Anya(TransformPos2CPos(transformXY2Vec2(500, 250)), 100, 100, "First Button");
+    Trigger a;
+
+    Texture2D qw = LoadTextureFromImage(Anya.GetTexture());
 
     // Main game loop
     while (!WindowShouldClose())        // Detect window close button or ESC key
     {
-        // Update
+        /*
         //----------------------------------------------------------------------------------
         // Translate based on mouse right click
         if (IsMouseButtonDown(MOUSE_BUTTON_RIGHT))
@@ -34,7 +39,8 @@ int main()
 
             camera.target = Vector2Add(camera.target, delta);
         }
-
+        
+        
         // Zoom based on mouse wheel
         float wheel = GetMouseWheelMove();
         if (wheel != 0)
@@ -81,12 +87,34 @@ int main()
         DrawText("Mouse right button drag to move, mouse wheel to zoom", 10, 10, 20, WHITE);
 
         EndDrawing();
-        //----------------------------------------------------------------------------------
-    }
+        */
 
+        Anya.CheckJob(GetMousePosition(), a);
+        
+        BeginDrawing();
+        ClearBackground(WHITE);
+        BeginMode2D(camera);
+
+        rlPushMatrix();
+        rlTranslatef(0, 25 * 50, 0);
+        rlRotatef(90, 1, 0, 0);
+        //DrawGrid(200, 1000);
+        rlPopMatrix();
+
+        //DrawTextureV(qw, Anya.GetCenter(), GRAY);
+        
+
+
+        EndMode2D();
+        EndDrawing();
+
+
+    }
+    UnloadTexture(qw);
     // De-Initialization
     //--------------------------------------------------------------------------------------
     CloseWindow();        // Close window and OpenGL context
     //--------------------------------------------------------------------------------------
+    
     return 0;
 }

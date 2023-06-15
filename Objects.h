@@ -2,6 +2,7 @@
 #include "HitBox.h"
 #include <string>
 #include "raylib.h"
+#include "Addons.h"
 
 //using namespace std;
 
@@ -17,11 +18,12 @@ public:
 	Button(Vector2 Center, float width, float height, int mode);
 	Button(Vector2 Center, float width, float height, std::string title);
 	Button(Vector2 Center, float width, float height, std::string title, int mode);
-	Button(Vector2 Center, float width, float height, Image texture);
+	/*Button(Vector2 Center, float width, float height, Image texture);
 	Button(Vector2 Center, float width, float height, Image texture, int mode);
 	Button(Vector2 Center, float width, float height, std::string title, Image texture);
-	Button(Vector2 Center, float width, float height, std::string title, Image texture, int mode);
-
+	Button(Vector2 Center, float width, float height, std::string title, Image texture, int mode);*/
+	~Button();
+	
 	//Getters and Setters
 	void SetButtonHitBox(SimpleHitBox HitBox);
 	void SetCenter(Vector2 Center);
@@ -39,13 +41,25 @@ public:
 	float GetHeight();
 	int GetMode();
 	
-	virtual void CheckJob(Vector2 MousePos) = 0 {};
+	virtual void CheckJob(Vector2 MousePos){};
 
 private:
 	SimpleHitBox HitBox;
 	Vector2 Center;
-	Image texture;
+	Image  texture;
 	std::string title;
 	float width, height;
 	int mode;
+};
+
+
+class TriggerButton : public Button
+{
+public:
+	TriggerButton(Vector2 Center, float width, float height) :Button(Center, width, height) {};
+	TriggerButton(Vector2 Center, float width, float height, std::string title) :Button(Center, width, height, title) {};
+
+	void CheckJob(Vector2 MousePos, Trigger& other);	//it isn't working
+private:
+	int count = 0;
 };

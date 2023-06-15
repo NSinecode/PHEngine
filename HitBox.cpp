@@ -236,7 +236,7 @@ SimpleHitBox::SimpleHitBox(Vector2 Center, Point MaxXMaxY)
 
 SimpleHitBox::SimpleHitBox(Vector2 Center, float width, float height)
 {
-	try
+	/*try
 	{
 		if (width)
 			this->width = width;
@@ -255,7 +255,7 @@ SimpleHitBox::SimpleHitBox(Vector2 Center, float width, float height)
 	catch (...)
 	{
 		std::cout << "ERROR" << std::endl;
-	}
+	}*/
 	this->Center = Center;
 	this->width = width;
 	this->height = height;
