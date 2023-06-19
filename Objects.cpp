@@ -1,9 +1,12 @@
 #include "Objects.h"
+#include <vector>
 
 Button::Button()
 {
     Center.x = Center.y = width = height = mode = 0;
-    this->texture = GenImageColor(width, height, GRAY);
+    texture.resize(2);
+    this->texture[REGULAR] = LoadTextureFromImage(GenImageColor(width, height, GRAY));
+    this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
 }
 
 Button::Button(Vector2 Center, float width, float height)
@@ -13,7 +16,9 @@ Button::Button(Vector2 Center, float width, float height)
     this->height = height;
     SimpleHitBox a(Center, width, height);
     HitBox = a;
-    this->texture = GenImageColor(width, height, GRAY);
+    texture.resize(2);
+    this->texture[REGULAR] = LoadTextureFromImage(GenImageColor(width, height, GRAY));
+    this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
 }
 
 Button::Button(Vector2 Center, float width, float height, int mode)
@@ -23,8 +28,10 @@ Button::Button(Vector2 Center, float width, float height, int mode)
     this->height = height;
     SimpleHitBox a(Center, width, height);
     HitBox = a;
+    texture.resize(2);
     this->mode = mode;
-    this->texture = GenImageColor(width, height, GRAY);
+    this->texture[REGULAR] = LoadTextureFromImage(GenImageColor(width, height, GRAY));
+    this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
 }
 
 Button::Button(Vector2 Center, float width, float height, std::string title)
@@ -35,7 +42,9 @@ Button::Button(Vector2 Center, float width, float height, std::string title)
     SimpleHitBox a(Center, width, height);
     HitBox = a;
     this->title = title;
-    this->texture = GenImageColor(width, height, GRAY);
+    texture.resize(2);
+    this->texture[REGULAR] = LoadTextureFromImage(GenImageColor(width, height, GRAY));
+    this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
 }
 
 Button::Button(Vector2 Center, float width, float height, std::string title, int mode)
@@ -47,7 +56,9 @@ Button::Button(Vector2 Center, float width, float height, std::string title, int
     HitBox = a;
     this->title = title;
     this->mode = mode;
-    this->texture = GenImageColor(width, height, GRAY);
+    texture.resize(2);
+    this->texture[REGULAR] = LoadTextureFromImage(GenImageColor(width, height, GRAY));
+    this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
 }
 
 //Button::Button(Vector2 Center, float width, float height, Image texture)
@@ -94,10 +105,13 @@ Button::Button(Vector2 Center, float width, float height, std::string title, int
 //    this->mode = mode;
 //}
 
-Button::~Button()
-{
-    UnloadImage(texture);
-}
+//Button::~Button()
+//{
+//    for (int i = 0; i <= 1; i++)
+//    {
+//        UnloadTexture(texture[i]);
+//    }
+//}
 
 void Button::SetButtonHitBox(SimpleHitBox HitBox)
 {
@@ -107,11 +121,6 @@ void Button::SetButtonHitBox(SimpleHitBox HitBox)
 void Button::SetCenter(Vector2 Center)
 {
     this->Center = Center;
-}
-
-void Button::SetTexture(Image texture)
-{
-    this->texture = texture;
 }
 
 void Button::SetTitle(std::string title)
@@ -135,9 +144,9 @@ void Button::SetWidthAndHeight(float width, float height)
     this->height = height;
 }
 
-void Button::SetMode(int mode)
+void Button::SetChoose(bool choose)
 {
-    this->mode = mode;
+    this->choose = choose;
 }
 
 SimpleHitBox Button::GetHitBox()
@@ -150,7 +159,7 @@ Vector2 Button::GetCenter()
     return Center;
 }
 
-Image Button::GetTexture()
+std::vector<Texture2D> Button::GetTexture()
 {
     return texture;
 }
@@ -170,30 +179,26 @@ float Button::GetHeight()
     return height;
 }
 
-int Button::GetMode()
+bool Button::GetChoose()
 {
-    return mode;
+    return choose;
 }
-
 
 
 void TriggerButton::CheckJob(Vector2 MousePos, Trigger& other)
 {
     if (GetHitBox().CheckMouse(MousePos))
     {
-        Image* texture = new Image(GetTexture());
-        ImageColorReplace(texture, GRAY, GREEN);
+        SetChoose(TRIGGERED);
         if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
         {
-            other.Job();
+            //other.Job();
         }
 
-        delete texture;
+        
     }
     else
     {
-        Image* texture = new Image(GetTexture());
-        ImageColorReplace(texture, GREEN, GRAY);
-        delete texture;
+        SetChoose(REGULAR);
     }
 }

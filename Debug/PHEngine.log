@@ -1,2 +1,4 @@
 ﻿  PHEngine.cpp
+C:\Users\prikh\source\repos\PHEngine\PHEngine.cpp(107,117): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\PHEngine.cpp(107,77): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
   PHEngine.vcxproj -> C:\Users\prikh\source\repos\PHEngine\Debug\PHEngine.exe

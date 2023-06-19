@@ -5,6 +5,7 @@
 #include "Objects.h"
 #include "Addons.h"
 
+
 //------------------------------------------------------------------------------------
 // Program main entry point
 //------------------------------------------------------------------------------------
@@ -21,10 +22,10 @@ int main()
 
     SetTargetFPS(60);
 
-    TriggerButton Anya(TransformPos2CPos(transformXY2Vec2(500, 250)), 100, 100, "First Button");
+    TriggerButton Anya(TransformPos2CPos({500, -250}), 100, 100, "First Button");
     Trigger a;
 
-    Texture2D qw = LoadTextureFromImage(Anya.GetTexture());
+    
 
     // Main game loop
     while (!WindowShouldClose())        // Detect window close button or ESC key
@@ -101,8 +102,9 @@ int main()
         //DrawGrid(200, 1000);
         rlPopMatrix();
 
-        //DrawTextureV(qw, Anya.GetCenter(), GRAY);
         
+        //DrawRectangle(500, 250, 50, 60, GREEN);
+        DrawTexture(Anya.GetTexture()[Anya.GetChoose()], Anya.GetCenter().x - Anya.GetWidth()/2, Anya.GetCenter().y - Anya.GetHeight() / 2, WHITE);
 
 
         EndMode2D();
@@ -110,7 +112,7 @@ int main()
 
 
     }
-    UnloadTexture(qw);
+    
     // De-Initialization
     //--------------------------------------------------------------------------------------
     CloseWindow();        // Close window and OpenGL context

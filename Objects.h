@@ -3,8 +3,12 @@
 #include <string>
 #include "raylib.h"
 #include "Addons.h"
+#include <vector>
 
-//using namespace std;
+#define	REGULAR	  0
+#define	TRIGGERED 1
+
+
 
 //I use decard's system, so I need to convert
 Vector2 TransformPos2CPos(Vector2 pos);
@@ -22,31 +26,32 @@ public:
 	Button(Vector2 Center, float width, float height, Image texture, int mode);
 	Button(Vector2 Center, float width, float height, std::string title, Image texture);
 	Button(Vector2 Center, float width, float height, std::string title, Image texture, int mode);*/
-	~Button();
+	//~Button();
 	
 	//Getters and Setters
 	void SetButtonHitBox(SimpleHitBox HitBox);
 	void SetCenter(Vector2 Center);
-	void SetTexture(Image texture);
 	void SetTitle(std::string title);
 	void SetWidth(float width);
 	void SetHeight(float height);
 	void SetWidthAndHeight(float width, float height);
-	void SetMode(int mode);
+	void SetChoose(bool choose);
 	SimpleHitBox GetHitBox();
 	Vector2 GetCenter();
-	Image GetTexture();
+	std::vector<Texture2D> GetTexture();
 	std::string GetTitle();
 	float GetWidth();
 	float GetHeight();
-	int GetMode();
+	bool GetChoose();
 	
 	virtual void CheckJob(Vector2 MousePos){};
 
 private:
+	bool choose = 0;
 	SimpleHitBox HitBox;
 	Vector2 Center;
-	Image  texture;
+	//Image  texture;
+	std::vector<Texture2D> texture;
 	std::string title;
 	float width, height;
 	int mode;
