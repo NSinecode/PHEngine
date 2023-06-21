@@ -25,7 +25,7 @@ int main()
     SetTargetFPS(60);
 
     TriggerButton Anya(TransformPos2CPos({500, -250}), 150, 20, "First Button");
-    Trigger a;
+    SceneSwitcherTrigger a;
 
     while (!WindowShouldClose())        
     {
@@ -89,7 +89,7 @@ int main()
         EndDrawing();
         */
 
-        Anya.CheckJob(GetMousePosition(), a);
+        Anya.CheckJob(GetMousePosition(), a, 1);
         
         BeginDrawing();
         ClearBackground(WHITE);

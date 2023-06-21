@@ -34,9 +34,10 @@ public:
 	virtual void Job(){};
 };
 
-class SceneSwitcherTrigger
+class SceneSwitcherTrigger : public Trigger
 {
 public:
+	SceneSwitcherTrigger();
 	SceneSwitcherTrigger(double Scene0);
 
 	double GetScene();

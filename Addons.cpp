@@ -35,6 +35,11 @@ Vector2 TransformPos2CPos(Point pos)
 //    DrawTextEx( FontDef.Default, title.c_str(), pos, fontSize, 1, color );
 //}
 
+SceneSwitcherTrigger::SceneSwitcherTrigger()
+{
+    Scene = 0;
+}
+
 SceneSwitcherTrigger::SceneSwitcherTrigger(double Scene0)
 {
     Scene = Scene0;

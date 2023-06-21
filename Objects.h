@@ -66,7 +66,7 @@ public:
 	TriggerButton(Vector2 Center, float width, float height) :Button(Center, width, height) {};
 	TriggerButton(Vector2 Center, float width, float height, std::string title) :Button(Center, width, height, title) {};
 
-	void CheckJob(Vector2 MousePos, Trigger& other);	//stopped because of no job
+	void CheckJob(Vector2 MousePos, Trigger& other, double Scene);
 
 private:
 	

@@ -198,14 +198,14 @@ void Button::DrawButton(int FontSize)
 }
 
 
-void TriggerButton::CheckJob(Vector2 MousePos, Trigger& other)
+void TriggerButton::CheckJob(Vector2 MousePos, Trigger& other, double Scene)
 {
     if (GetHitBox().CheckMouse(MousePos))
     {
         SetChoose(TRIGGERED);
         if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
         {
-            //other.Job();
+            other.Job(Scene);
         }
 
         
