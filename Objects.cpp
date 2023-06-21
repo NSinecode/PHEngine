@@ -3,7 +3,7 @@
 
 Button::Button()
 {
-    Center.x = Center.y = width = height = mode = 0;
+    Center.x = Center.y = width = height = 0;
     texture.resize(2);
     this->texture[REGULAR] = LoadTextureFromImage(GenImageColor(width, height, GRAY));
     this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
@@ -21,7 +21,7 @@ Button::Button(Vector2 Center, float width, float height)
     this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
 }
 
-Button::Button(Vector2 Center, float width, float height, int mode)
+Button::Button(Vector2 Center, float width, float height, int FontSize)
 {
     this->Center = Center;
     this->width = width;
@@ -29,7 +29,7 @@ Button::Button(Vector2 Center, float width, float height, int mode)
     SimpleHitBox a(Center, width, height);
     HitBox = a;
     texture.resize(2);
-    this->mode = mode;
+    this->FontSize = FontSize;
     this->texture[REGULAR] = LoadTextureFromImage(GenImageColor(width, height, GRAY));
     this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
 }
@@ -47,7 +47,7 @@ Button::Button(Vector2 Center, float width, float height, std::string title)
     this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
 }
 
-Button::Button(Vector2 Center, float width, float height, std::string title, int mode)
+Button::Button(Vector2 Center, float width, float height, std::string title, int FontSize)
 {
     this->Center = Center;
     this->width = width;
@@ -55,7 +55,7 @@ Button::Button(Vector2 Center, float width, float height, std::string title, int
     SimpleHitBox a(Center, width, height);
     HitBox = a;
     this->title = title;
-    this->mode = mode;
+    this->FontSize = FontSize;
     texture.resize(2);
     this->texture[REGULAR] = LoadTextureFromImage(GenImageColor(width, height, GRAY));
     this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
@@ -182,6 +182,19 @@ float Button::GetHeight()
 bool Button::GetChoose()
 {
     return choose;
+}
+
+void Button::DrawButton()
+{
+    DrawTextureV(texture[choose], HitBox.GetMinXMinY().GetPosition(), WHITE);
+    DrawText(title.c_str(), Center.x - MeasureText(title.c_str(), FontSize) / 2, Center.y - FontSize / 2, FontSize, LIGHTGRAY);
+}
+
+void Button::DrawButton(int FontSize)
+{
+    this->FontSize = FontSize;
+    DrawTextureV(texture[choose], HitBox.GetMinXMinY().GetPosition(), WHITE);
+    DrawText(title.c_str(), Center.x - MeasureText(title.c_str(), FontSize) / 2, Center.y - FontSize / 2, FontSize, LIGHTGRAY);
 }
 
 

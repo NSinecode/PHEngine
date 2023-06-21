@@ -4,31 +4,30 @@
 #include "HitBox.h"
 #include "Objects.h"
 #include "Addons.h"
+#include "Scene.h"
 
+//Font NewDefault = LoadFont("Fronts/LUCON.TTF");
 
-//------------------------------------------------------------------------------------
-// Program main entry point
-//------------------------------------------------------------------------------------
+//Def FontDef;
+
 int main()
 {
     
-    const int screenWidth = 800;
-    const int screenHeight = 450;
+    const int screenWidth = 1000;
+    const int screenHeight = 1000;
 
     InitWindow(screenWidth, screenHeight, "PHEngine");
+    
 
     Camera2D camera = { 0 };
     camera.zoom = 1.0f;
 
     SetTargetFPS(60);
 
-    TriggerButton Anya(TransformPos2CPos({500, -250}), 100, 100, "First Button");
+    TriggerButton Anya(TransformPos2CPos({500, -250}), 150, 20, "First Button");
     Trigger a;
 
-    
-
-    // Main game loop
-    while (!WindowShouldClose())        // Detect window close button or ESC key
+    while (!WindowShouldClose())        
     {
         /*
         //----------------------------------------------------------------------------------
@@ -103,13 +102,12 @@ int main()
         rlPopMatrix();
 
         
-        //DrawRectangle(500, 250, 50, 60, GREEN);
-        DrawTexture(Anya.GetTexture()[Anya.GetChoose()], Anya.GetCenter().x - Anya.GetWidth()/2, Anya.GetCenter().y - Anya.GetHeight() / 2, WHITE);
-
+        
+        
+        Anya.DrawButton();
 
         EndMode2D();
         EndDrawing();
-
 
     }
     

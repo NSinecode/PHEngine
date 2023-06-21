@@ -143,6 +143,7 @@
     <ClCompile Include="HitBox.cpp" />
     <ClCompile Include="Objects.cpp" />
     <ClCompile Include="PHEngine.cpp" />
+    <ClCompile Include="Scene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
@@ -152,6 +153,7 @@
     <ClInclude Include="Addons.h" />
     <ClInclude Include="HitBox.h" />
     <ClInclude Include="Objects.h" />
+    <ClInclude Include="Scene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

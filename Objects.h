@@ -19,9 +19,9 @@ class Button
 public:
 	Button();
 	Button(Vector2 Center, float width, float height);
-	Button(Vector2 Center, float width, float height, int mode);
+	Button(Vector2 Center, float width, float height, int FontSize);
 	Button(Vector2 Center, float width, float height, std::string title);
-	Button(Vector2 Center, float width, float height, std::string title, int mode);
+	Button(Vector2 Center, float width, float height, std::string title, int FontSize);
 	/*Button(Vector2 Center, float width, float height, Image texture);
 	Button(Vector2 Center, float width, float height, Image texture, int mode);
 	Button(Vector2 Center, float width, float height, std::string title, Image texture);
@@ -45,6 +45,8 @@ public:
 	bool GetChoose();
 	
 	virtual void CheckJob(Vector2 MousePos){};
+	void DrawButton();
+	void DrawButton(int FontSize);
 
 private:
 	bool choose = 0;
@@ -54,7 +56,7 @@ private:
 	std::vector<Texture2D> texture;
 	std::string title;
 	float width, height;
-	int mode;
+	int FontSize = 20;
 };
 
 
@@ -64,7 +66,8 @@ public:
 	TriggerButton(Vector2 Center, float width, float height) :Button(Center, width, height) {};
 	TriggerButton(Vector2 Center, float width, float height, std::string title) :Button(Center, width, height, title) {};
 
-	void CheckJob(Vector2 MousePos, Trigger& other);	//it isn't working
+	void CheckJob(Vector2 MousePos, Trigger& other);	//stopped because of no job
+
 private:
-	int count = 0;
+	
 };
