@@ -13,3 +13,7 @@
 #define WORKSHOP	0.2
 
 #define CREDITS		0.3
+
+
+
+void MainScene(SceneSwitcherTrigger trigger, std::vector<std::vector<Sell>> &LifeHeight, int count, Texture2D Sells, int &lifecount);

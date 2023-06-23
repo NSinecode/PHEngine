@@ -2,15 +2,14 @@
 #include "HitBox.h"
 #include "raylib.h"
 #include <string>
+#include <vector>
+#include "Objects.h"
 
 Vector2 transformXY2Vec2(float x, float y);
 
 //I use decard's system, so I need to convert
 Vector2 TransformPos2CPos(Vector2 pos);
 Vector2 TransformPos2CPos(Point pos);
-
-void DrawTextB(std::string title, int posX, int posY, int fontSize, Color color);
-void DrawTextBV(std::string title, Vector2 pos, int fontSize, Color color);
 
 
 //In develop
@@ -22,16 +21,31 @@ private:
 
 };
 
-//struct Def
-//{
-//	Font Default;
-//}; 
+class Sell
+{
+public:
+	Sell();
+	Sell(Vector2 Center);
+	Sell(Vector2 Center, bool alive);
 
+	//void SetCenter();
+	void Setalive(bool alive);
+	Vector2 GetCenter();
+	bool Getalive();
+
+private:
+	Vector2 Center;
+	bool alive;
+};
+
+int CountNeighbours(std::vector<std::vector<Sell>> LifeHeight, int i, int j);
+
+//std::vector<TriggerButton> InitMainMenuButtons();
 
 class Trigger
 {
 public:
-	virtual void Job(){};
+	virtual void Job(double Scene0){};
 };
 
 class SceneSwitcherTrigger : public Trigger
@@ -46,3 +60,5 @@ public:
 private:
 	double Scene = 0;
 };
+
+

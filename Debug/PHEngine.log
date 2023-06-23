@@ -1,33 +1,11 @@
 ﻿  Addons.cpp
-  Objects.cpp
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(8,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(8,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(9,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(9,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(20,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(20,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(21,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(21,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(33,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(33,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(34,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(34,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(46,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(46,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(47,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(47,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(60,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(60,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(61,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(61,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(190,91): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(190,38): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(197,91): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Objects.cpp(197,38): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-  PHEngine.cpp
-C:\Users\prikh\source\repos\PHEngine\Scene.h(10,1): error C2007: синтаксис #define
-C:\Users\prikh\source\repos\PHEngine\Scene.h(10,1): fatal error C1004: непредвиденное обнаружение конца файла
+C:\Users\prikh\source\repos\PHEngine\Objects.h(69,34): error C2061: синтаксическая ошибка: идентификатор "Trigger"
   Scene.cpp
-C:\Users\prikh\source\repos\PHEngine\Scene.h(10,1): error C2007: синтаксис #define
-C:\Users\prikh\source\repos\PHEngine\Scene.h(10,1): fatal error C1004: непредвиденное обнаружение конца файла
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(9,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(11,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(28,126): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(28,102): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(35,10): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(36,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(38,27): warning C4018: <: несоответствие типов со знаком и без знака
   Создание кода...
