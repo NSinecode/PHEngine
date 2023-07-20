@@ -1,11 +1,11 @@
-﻿  Addons.cpp
-C:\Users\prikh\source\repos\PHEngine\Objects.h(69,34): error C2061: синтаксическая ошибка: идентификатор "Trigger"
+﻿  PHEngine.cpp
   Scene.cpp
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(9,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(11,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(28,126): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(28,102): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(35,10): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(36,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(38,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(29,109): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(30,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(31,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(32,111): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(66,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(80,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(96,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
   Создание кода...
+  PHEngine.vcxproj -> C:\Users\prikh\source\repos\PHEngine\Debug\PHEngine.exe

@@ -34,6 +34,7 @@ int main()
         }
         LifeHeight.push_back(q);
     }
+
     int maincount = 0, lifecount = 0;
     //std::vector<Button> Main = InitMainMenuButtons();
 
@@ -46,19 +47,29 @@ int main()
 
     while (!WindowShouldClose())        
     {
+        //Just main menu, i will complete it later
         if (MAINTRIGGER.GetScene() == MAINMENU)
         {
             MainScene(MAINTRIGGER, LifeHeight, maincount, Sells, lifecount);
         }
+        if (MAINTRIGGER.GetScene() == PHLOBBY)
+        {
+            MainLobby(MAINTRIGGER);
+        }
+        if (MAINTRIGGER.GetScene() == SETTINGS)
+        {
+            SettingsScene(MAINTRIGGER);
+        }
+        if (MAINTRIGGER.GetScene() == WORKSHOP)
+        {
+            WorkShopScene(MAINTRIGGER);
+        }
+        if (MAINTRIGGER.GetScene() == CREDITS)
+        {
+            CreditsScene(MAINTRIGGER);
+        }
         
         
-        
-        //BeginDrawing();
-        //ClearBackground(WHITE);
-        ////BeginMode2D(camera);
-        ////EndMode2D();
-        //EndDrawing();
-
     }
     
     UnloadTexture(Sells);

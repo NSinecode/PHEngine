@@ -3,7 +3,7 @@
 #include "raylib.h"
 #include <string>
 #include <vector>
-#include "Objects.h"
+//#include "Objects.h"
 
 Vector2 transformXY2Vec2(float x, float y);
 
@@ -40,9 +40,9 @@ private:
 
 int CountNeighbours(std::vector<std::vector<Sell>> LifeHeight, int i, int j);
 
-//std::vector<TriggerButton> InitMainMenuButtons();
 
-class Trigger
+
+class Trigger 
 {
 public:
 	virtual void Job(double Scene0){};
@@ -56,7 +56,7 @@ public:
 
 	double GetScene();
 
-	void Job(int Scene);
+	void Job(double Scene);
 private:
 	double Scene = 0;
 };

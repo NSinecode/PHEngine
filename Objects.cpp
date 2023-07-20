@@ -61,6 +61,32 @@ Button::Button(Vector2 Center, float width, float height, std::string title, int
     this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
 }
 
+Button::Button(Vector2 Center, float height, std::string title)
+{
+    this->Center = Center;
+    this->height = height;
+    this->title = title;
+    width = MeasureText(title.c_str(), 30) + 10;
+    SimpleHitBox a(Center, width, height);
+    HitBox = a;
+    texture.resize(2);
+    this->texture[REGULAR] = LoadTextureFromImage(GenImageColor(width, height, GRAY));
+    this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
+}
+
+Button::Button(Vector2 Center, float height, std::string title, int FrontSize)
+{
+    this->Center = Center;
+    this->height = height;
+    this->title = title;
+    width = MeasureText(title.c_str(), FontSize) + 10;
+    SimpleHitBox a(Center, width, height);
+    HitBox = a;
+    texture.resize(2);
+    this->texture[REGULAR] = LoadTextureFromImage(GenImageColor(width, height, GRAY));
+    this->texture[TRIGGERED] = LoadTextureFromImage(GenImageColor(width, height, GREEN));
+}
+
 //Button::Button(Vector2 Center, float width, float height, Image texture)
 //{
 //    this->Center = Center;
@@ -105,13 +131,15 @@ Button::Button(Vector2 Center, float width, float height, std::string title, int
 //    this->mode = mode;
 //}
 
-//Button::~Button()
-//{
-//    for (int i = 0; i <= 1; i++)
-//    {
-//        UnloadTexture(texture[i]);
-//    }
-//}
+Button::~Button()
+{
+    for (int i = 0; i <= 1; i++)
+    {
+        UnloadTexture(texture[i]);
+    }
+}
+
+
 
 void Button::SetButtonHitBox(SimpleHitBox HitBox)
 {
@@ -186,17 +214,30 @@ bool Button::GetChoose()
 
 void Button::DrawButton()
 {
-    DrawTextureV(texture[choose], HitBox.GetMinXMinY().GetPosition(), WHITE);
-    DrawText(title.c_str(), Center.x - MeasureText(title.c_str(), FontSize) / 2, Center.y - FontSize / 2, FontSize, LIGHTGRAY);
+    DrawTextureV(texture[choose], { HitBox.GetMinXMinY().GetPosition().x , HitBox.GetMinXMinY().GetPosition().y + height/2 }, WHITE);
+    DrawText(title.c_str(), Center.x - MeasureText(title.c_str(), FontSize) / 2, Center.y + FontSize /2, FontSize, LIGHTGRAY);
 }
 
 void Button::DrawButton(int FontSize)
 {
     this->FontSize = FontSize;
     DrawTextureV(texture[choose], HitBox.GetMinXMinY().GetPosition(), WHITE);
-    DrawText(title.c_str(), Center.x - MeasureText(title.c_str(), FontSize) / 2, Center.y - FontSize / 2, FontSize, LIGHTGRAY);
+    DrawText(title.c_str(), Center.x - MeasureText(title.c_str(), FontSize) / 2, Center.y + FontSize / 2, FontSize, LIGHTGRAY);
 }
 
+
+TriggerButton::TriggerButton(Button &other)
+{
+    SetCenter(other.GetCenter());
+    SetWidth(other.GetWidth());
+    SetHeight(other.GetHeight());
+    SimpleHitBox a(GetCenter(), GetWidth(), GetHeight());
+    SetButtonHitBox(a);
+    SetTitle(other.GetTitle());
+    GetTexture().resize(2);
+    GetTexture()[REGULAR] = LoadTextureFromImage(GenImageColor(GetWidth(), GetHeight(), GRAY));
+    GetTexture()[TRIGGERED] = LoadTextureFromImage(GenImageColor(GetWidth(), GetHeight(), GREEN));
+}
 
 void TriggerButton::CheckJob(Vector2 MousePos, Trigger& other, double Scene)
 {
@@ -207,8 +248,6 @@ void TriggerButton::CheckJob(Vector2 MousePos, Trigger& other, double Scene)
         {
             other.Job(Scene);
         }
-
-        
     }
     else
     {

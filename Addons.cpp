@@ -50,16 +50,6 @@ int CountNeighbours(std::vector<std::vector<Sell>> LifeHeight, int i, int j)
     return a;
 }
 
-//std::vector<TriggerButton> InitMainMenuButtons()
-//{
-//    std::vector<TriggerButton> a;
-//
-//    TriggerButton start({ (float)GetScreenWidth() / 2, (float)GetScreenHeight() / 2 }, GetScreenWidth() / 50, GetScreenHeight() / 20, LoadFileText("/Localization/en.txt"));
-//    a.push_back(start);
-//    
-//    return a;
-//}
-
 //void DrawTextB(std::string title, int posX, int posY, int fontSize, Color color)
 //{
 //    DrawTextEx( FontDef.Default, title.c_str(), { (float)posX , (float)posY }, fontSize, 1, color );
@@ -85,7 +75,7 @@ double SceneSwitcherTrigger::GetScene()
     return Scene;
 }
 
-void SceneSwitcherTrigger::Job(int Scene)
+void SceneSwitcherTrigger::Job(double Scene)
 {
     this->Scene = Scene;
 }

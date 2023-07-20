@@ -22,11 +22,14 @@ public:
 	Button(Vector2 Center, float width, float height, int FontSize);
 	Button(Vector2 Center, float width, float height, std::string title);
 	Button(Vector2 Center, float width, float height, std::string title, int FontSize);
+	Button(Vector2 Center, float height, std::string title);
+	Button(Vector2 Center, float height, std::string title, int FrontSize);
+
 	/*Button(Vector2 Center, float width, float height, Image texture);
 	Button(Vector2 Center, float width, float height, Image texture, int mode);
 	Button(Vector2 Center, float width, float height, std::string title, Image texture);
 	Button(Vector2 Center, float width, float height, std::string title, Image texture, int mode);*/
-	//~Button();
+	~Button();
 	
 	//Getters and Setters
 	void SetButtonHitBox(SimpleHitBox HitBox);
@@ -63,11 +66,17 @@ private:
 class TriggerButton : public Button
 {
 public:
+	TriggerButton() : Button() {};
 	TriggerButton(Vector2 Center, float width, float height) :Button(Center, width, height) {};
 	TriggerButton(Vector2 Center, float width, float height, std::string title) :Button(Center, width, height, title) {};
+	TriggerButton(Vector2 Center, float height, std::string title) :Button(Center, height, title) {};
+	TriggerButton(Vector2 Center, float height, std::string title, int FrontSize) :Button(Center, height, title, FrontSize) {};
 
-	void CheckJob(Vector2 MousePos, Trigger& other, double Scene);
+	TriggerButton(Button &other);
+	
 
+	void CheckJob(Vector2 MousePos, Trigger& other , double Scene);
+	
 private:
 	
 };
