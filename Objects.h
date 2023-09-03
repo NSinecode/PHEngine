@@ -120,7 +120,7 @@ public:
 
 private:
 	PHHitBox HitBox;
-	
-	float mass, modV, AngleV;
+	PHMaterial Material;
+	float mass, modV = 0, angleV = 0, temperature;
 
 };
