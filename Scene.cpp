@@ -1,6 +1,6 @@
 #include "Scene.h"
 
-void MainScene(SceneSwitcherTrigger &trigger, std::vector<std::vector<Sell>> &LifeHeight, int count, Texture2D Sells, int &lifecount)
+void MainScene(SceneSwitcherTrigger &trigger/*, std::vector<std::vector<Sell>> &LifeHeight, int count, Texture2D Sells, int &lifecount*/)
 {
 	//Life logic
 	/*if (lifecount == 20)
@@ -107,8 +107,22 @@ void CreditsScene(SceneSwitcherTrigger& trigger)
 }
 
 
-void MainLobby(SceneSwitcherTrigger& trigger)
+void MainLobby(SceneSwitcherTrigger& trigger/*, SwitcherTrigger& swTrigger*/)
 {
+	TriggerButton mainmenu({ (float)GetScreenWidth() - 100, 40 }, GetScreenHeight() / 30, "Back");
 
+	//SwitchButton test({ (float)GetScreenWidth() / 2, 15 * (float)GetScreenHeight() / 30 }, GetScreenHeight() / 30, "Test");
+
+	mainmenu.CheckJob(GetMousePosition(), trigger, MAINMENU);
+	//test.CheckJob(GetMousePosition());
+
+	BeginDrawing();
+	ClearBackground(WHITE);
+
+	mainmenu.DrawButton();
+	//test.DrawButton();
+
+	DrawFPS(10, 30);
+	EndDrawing();
 }
 

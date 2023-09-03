@@ -1,0 +1,80 @@
+﻿  Addons.cpp
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(36,38): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(43,45): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  HitBox.cpp
+  Objects.cpp
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(36,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(36,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(37,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(37,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(38,71): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(38,64): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(50,85): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(50,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(51,87): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(51,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(62,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(62,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(63,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(63,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(64,71): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(64,64): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(76,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(76,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(77,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(77,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(78,71): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(78,64): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(90,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(90,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(91,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(91,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(92,71): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(92,64): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(105,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(105,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(106,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(106,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(107,71): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(107,64): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(115,44): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(119,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(119,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(120,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(120,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(121,71): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(121,64): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(129,50): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(133,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(133,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(134,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(134,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(135,71): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(135,64): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(197,44): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(201,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(201,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(202,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(202,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(203,71): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(203,64): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(280,91): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(280,38): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(287,91): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(287,38): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(300,85): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(300,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(301,87): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(301,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  PHEngine.cpp
+  Scene.cpp
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(29,109): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(30,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(31,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(32,111): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(66,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(80,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(96,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(112,82): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Создание кода...
+  PHEngine.vcxproj -> C:\Users\prikh\source\repos\PHEngine\x64\Debug\PHEngine.exe

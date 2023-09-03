@@ -22,12 +22,16 @@ public:
 	Point(Vector2 Position, Vector2 CenterPosition);
 
 	//Setters and Getters
+	void SetX(float X);
+	void SetY(float Y);
 	void SetV(float V);
 	void SetVcircle(float Vcircle);
 	void SetPosition(Vector2 Position);
 	void SetPosition(Point& other);
 	void SetCenterPosition(Vector2 CenterPosition);
 	void SetCenterPosition(Point& CenterPoint);
+	float GetX();
+	float GetY();
 	float GetV();
 	float GetVcircle();
 	Vector2 GetPosition();
@@ -58,6 +62,9 @@ public:
 	void SetMinXMinY(Point MinXMinY);
 	void SetMaxXMaxY(Point MaxXMaxY);
 	void SetCenter(Vector2 Center);
+	void SetCenterN(Vector2 Center);
+	void SetHeight(float height);
+	void SetWidth(float width);
 	Point GetMinXMinY();
 	Point GetMaxXMaxY();
 	Vector2 GetCenter();
@@ -68,4 +75,32 @@ private:
 	Point MinXMinY, MaxXMaxY;
 	Vector2 Center;
 	float width = NULL,  height = NULL;
+};
+
+class PHHitBox : public SimpleHitBox
+{
+public:
+	PHHitBox() : SimpleHitBox() {};
+	PHHitBox(Point MinXMinY, Point MaxXMaxY) : SimpleHitBox(MinXMinY, MaxXMaxY) { MinXMaxY.SetPosition({ MinXMinY.GetX(), MaxXMaxY.GetY() }); MaxXMinY.SetPosition({ MaxXMaxY.GetX(), MinXMinY.GetY() }); };
+	PHHitBox(Point MinXMinY, Vector2 Center) : SimpleHitBox(MinXMinY, Center) { MinXMaxY.SetPosition({ GetMinXMinY().GetX(), GetMaxXMaxY().GetY() }); MaxXMinY.SetPosition({ GetMaxXMaxY().GetX(), GetMinXMinY().GetY() }); };
+	PHHitBox(Vector2 Center, float width, float height) : SimpleHitBox(Center, width, height) { MinXMaxY.SetPosition({ GetMinXMinY().GetX(), GetMaxXMaxY().GetY() }); MaxXMinY.SetPosition({ GetMaxXMaxY().GetX(), GetMinXMinY().GetY() }); };
+
+	//Getters & Setters
+	Point GetMinXMaxY();
+	Point GetMaxXMinY();
+
+	void Resize(Vector2 Delta);
+	void ResizeWIDTH(float DeltaWIDTH);
+	void ResizeHEIGHT(float DeltaHEIGHT);
+
+	void Move(float xd, float yd);
+	void Move(Vector2 posd);
+
+
+	void RotateAroundPoint(float Angle, Point CenterOfRotation);
+	void RotateAroundCenter(float Angle);
+
+private:
+	Point MinXMaxY, MaxXMinY;
+	
 };

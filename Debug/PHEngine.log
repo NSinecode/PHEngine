@@ -1,11 +1,378 @@
-﻿  PHEngine.cpp
+﻿  Addons.cpp
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(8,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "transformXY2Vec2"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(9,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(9,1): error C2556: int transformXY2Vec2(float,float): перегруженная функция отличается от "Vector2 transformXY2Vec2(float,float)" только возвращаемым типом
+C:\Users\prikh\source\repos\PHEngine\Addons.h(8): message : см. объявление "transformXY2Vec2"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(8,9): error C2371: transformXY2Vec2: переопределение; различные базовые типы
+C:\Users\prikh\source\repos\PHEngine\Addons.h(8): message : см. объявление "transformXY2Vec2"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(10,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "aq"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(10,10): error C2065: aq: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(11,2): error C2065: aq: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(11,12): error C2065: aq: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(12,9): error C2065: aq: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(15,26): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(15,1): error C2371: Vector2: переопределение; различные базовые типы
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(8): message : см. объявление "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(15,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "TransformPos2CPos"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(16,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(16,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(21,26): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(21,1): error C2371: Vector2: переопределение; различные базовые типы
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(8): message : см. объявление "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(21,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "TransformPos2CPos"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(22,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(22,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(88,7): error C7550: "Sell::{ctor}": полное имя в этом контексте называет конструктор, а не тип.
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(88,20): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "Center"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(89,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(89,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(93,7): error C7550: "Sell::{ctor}": полное имя в этом контексте называет конструктор, а не тип.
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(93,20): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "Center"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(94,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(94,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(104,15): error C2143: синтаксическая ошибка: отсутствие ";" перед "Sell::GetCenter"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(104,24): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(104,1): error C2371: Vector2: переопределение; различные базовые типы
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(8): message : см. объявление "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(105,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(105,1): error C2556: int Sell::GetCenter(void): перегруженная функция отличается от "Vector2 Sell::GetCenter(void)" только возвращаемым типом
+C:\Users\prikh\source\repos\PHEngine\Addons.h(33): message : см. объявление "Sell::GetCenter"
+C:\Users\prikh\source\repos\PHEngine\Addons.cpp(104,15): error C2371: Sell::GetCenter: переопределение; различные базовые типы
+C:\Users\prikh\source\repos\PHEngine\Addons.h(33): message : см. объявление "Sell::GetCenter"
+  Objects.cpp
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "TransformPos2CPos"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,35): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,9): error C2365: TransformPos2CPos: переопределение; предыдущим определением было "функция"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,35): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "pos"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(17,26): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Objects.h(17,1): error C2371: Vector2: переопределение; различные базовые типы
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16): message : см. объявление "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(17,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "TransformPos2CPos"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(23,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(23,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(24,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(24,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(25,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(25,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(26,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(26,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(27,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(27,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(28,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(28,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(38,17): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(45,10): error C3646: GetCenter: неизвестный спецификатор переопределения
+C:\Users\prikh\source\repos\PHEngine\Objects.h(45,19): error C2059: синтаксическая ошибка: (
+C:\Users\prikh\source\repos\PHEngine\Objects.h(45,21): error C2238: непредвиденные лексемы перед ";"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(52,24): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(59,10): error C3646: Center: неизвестный спецификатор переопределения
+C:\Users\prikh\source\repos\PHEngine\Objects.h(59,16): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,67): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,75): error C2248: Button::width: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::width"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,82): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,86): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,94): error C2248: Button::width: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::width"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,101): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,109): error C2248: Button::title: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(62): message : см. объявление "Button::title"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,73): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,81): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,89): error C2248: Button::title: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(62): message : см. объявление "Button::title"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,88): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,96): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,104): error C2248: Button::title: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(62): message : см. объявление "Button::title"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,111): error C2065: FrontSize: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(6,5): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(6,16): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(8,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(8,65): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(9,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(9,67): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(10,71): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(10,64): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(13,9): error C7550: "Button::{ctor}": полное имя в этом контексте называет конструктор, а не тип.
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(13,24): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "Center"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(14,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(14,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(26,9): error C7550: "Button::{ctor}": полное имя в этом контексте называет конструктор, а не тип.
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(26,24): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "Center"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(27,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(27,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(40,9): error C7550: "Button::{ctor}": полное имя в этом контексте называет конструктор, а не тип.
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(40,24): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "Center"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(41,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(41,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(54,9): error C7550: "Button::{ctor}": полное имя в этом контексте называет конструктор, а не тип.
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(54,24): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "Center"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(55,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(55,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(69,9): error C7550: "Button::{ctor}": полное имя в этом контексте называет конструктор, а не тип.
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(69,24): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "Center"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(70,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(70,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(83,9): error C7550: "Button::{ctor}": полное имя в этом контексте называет конструктор, а не тип.
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(83,24): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "Center"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(84,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(84,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(156,32): error C2761: "void Button::SetCenter(void)": повторное объявление члена запрещено.
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(156,32): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "Center"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(157,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(157,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(192,17): error C2039: "GetCenter": не является членом "Button".
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(192,26): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(192,1): error C2371: Vector2: переопределение; различные базовые типы
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16): message : см. объявление "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(192,26): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "GetCenter"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(193,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(193,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(225,29): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(225,82): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(225,125): error C2660: DrawText: функция не принимает 3 аргументов
+C:\Users\prikh\vcpkg\installed\x86-windows\include\raylib.h(1366,12): message : см. объявление "DrawText"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(232,29): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(232,82): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(232,126): error C2660: DrawText: функция не принимает 3 аргументов
+C:\Users\prikh\vcpkg\installed\x86-windows\include\raylib.h(1366,12): message : см. объявление "DrawText"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(238,21): error C2039: "GetCenter": не является членом "Button".
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(238,32): error C2660: Button::SetCenter: функция не принимает 1 аргументов
+C:\Users\prikh\source\repos\PHEngine\Objects.h(38,7): message : см. объявление "Button::SetCenter"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(241,20): error C3861: GetCenter: идентификатор не найден
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(245,85): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(245,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(246,87): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(246,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(249,38): error C2761: "void TriggerButton::CheckJob(void)": повторное объявление члена запрещено.
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(249,38): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "MousePos"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(250,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(250,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(265,6): error C2653: SwitchButton: не является именем класса или пространства имен
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(265,20): error C2182: CheckJob: недопустимое использование типа "void"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(265,37): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "MousePos"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(266,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\prikh\source\repos\PHEngine\Objects.cpp(266,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+  PHEngine.cpp
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "TransformPos2CPos"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,35): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,9): error C2365: TransformPos2CPos: переопределение; предыдущим определением было "функция"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,35): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "pos"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(17,26): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Objects.h(17,1): error C2371: Vector2: переопределение; различные базовые типы
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16): message : см. объявление "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(17,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "TransformPos2CPos"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(23,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(23,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(24,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(24,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(25,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(25,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(26,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(26,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(27,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(27,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(28,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(28,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(38,17): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(45,10): error C3646: GetCenter: неизвестный спецификатор переопределения
+C:\Users\prikh\source\repos\PHEngine\Objects.h(45,19): error C2059: синтаксическая ошибка: (
+C:\Users\prikh\source\repos\PHEngine\Objects.h(45,21): error C2238: непредвиденные лексемы перед ";"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(52,24): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(59,10): error C3646: Center: неизвестный спецификатор переопределения
+C:\Users\prikh\source\repos\PHEngine\Objects.h(59,16): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,67): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,75): error C2248: Button::width: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::width"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,82): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,86): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,94): error C2248: Button::width: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::width"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,101): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,109): error C2248: Button::title: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(62): message : см. объявление "Button::title"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,73): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,81): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,89): error C2248: Button::title: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(62): message : см. объявление "Button::title"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,88): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,96): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,104): error C2248: Button::title: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(62): message : см. объявление "Button::title"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,111): error C2065: FrontSize: необъявленный идентификатор
   Scene.cpp
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(29,109): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(30,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(31,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(32,111): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(66,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(80,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\prikh\source\repos\PHEngine\Scene.cpp(96,112): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "TransformPos2CPos"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,35): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,9): error C2365: TransformPos2CPos: переопределение; предыдущим определением было "функция"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16,35): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "pos"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(17,26): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Objects.h(17,1): error C2371: Vector2: переопределение; различные базовые типы
+C:\Users\prikh\source\repos\PHEngine\Objects.h(16): message : см. объявление "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(17,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "TransformPos2CPos"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(23,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(23,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(24,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(24,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(25,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(25,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(26,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(26,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(27,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(27,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(28,9): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(28,8): error C2535: Button::Button(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(22): message : см. объявление "Button::Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(38,17): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(45,10): error C3646: GetCenter: неизвестный спецификатор переопределения
+C:\Users\prikh\source\repos\PHEngine\Objects.h(45,19): error C2059: синтаксическая ошибка: (
+C:\Users\prikh\source\repos\PHEngine\Objects.h(45,21): error C2238: непредвиденные лексемы перед ";"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(52,24): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(59,10): error C3646: Center: неизвестный спецификатор переопределения
+C:\Users\prikh\source\repos\PHEngine\Objects.h(59,16): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,15): error C2535: TriggerButton::TriggerButton(void): функция-член уже определена или объявлена
+C:\Users\prikh\source\repos\PHEngine\Objects.h(71): message : см. объявление "TriggerButton::TriggerButton"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,16): error C2061: синтаксическая ошибка: идентификатор "Vector2"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,67): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,75): error C2248: Button::width: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::width"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(72,82): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,86): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,94): error C2248: Button::width: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::width"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,101): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(73,109): error C2248: Button::title: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(62): message : см. объявление "Button::title"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,73): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,81): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(74,89): error C2248: Button::title: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(62): message : см. объявление "Button::title"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,88): error C2065: Center: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,96): error C2248: Button::height: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(63): message : см. объявление "Button::height"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,104): error C2248: Button::title: невозможно обратиться к private член, объявленному в классе "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(62): message : см. объявление "Button::title"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(19): message : см. объявление "Button"
+C:\Users\prikh\source\repos\PHEngine\Objects.h(75,111): error C2065: FrontSize: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(29,122): error C2661: TriggerButton::TriggerButton: нет перегруженной функции, принимающей 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(30,128): error C2661: TriggerButton::TriggerButton: нет перегруженной функции, принимающей 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(31,128): error C2661: TriggerButton::TriggerButton: нет перегруженной функции, принимающей 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(32,126): error C2661: TriggerButton::TriggerButton: нет перегруженной функции, принимающей 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(34,53): error C2660: TriggerButton::CheckJob: функция не принимает 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,7): message : см. объявление "TriggerButton::CheckJob"
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(35,57): error C2660: TriggerButton::CheckJob: функция не принимает 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,7): message : см. объявление "TriggerButton::CheckJob"
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(36,57): error C2660: TriggerButton::CheckJob: функция не принимает 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,7): message : см. объявление "TriggerButton::CheckJob"
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(37,55): error C2660: TriggerButton::CheckJob: функция не принимает 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,7): message : см. объявление "TriggerButton::CheckJob"
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(66,124): error C2661: TriggerButton::TriggerButton: нет перегруженной функции, принимающей 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(68,57): error C2660: TriggerButton::CheckJob: функция не принимает 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,7): message : см. объявление "TriggerButton::CheckJob"
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(80,124): error C2661: TriggerButton::TriggerButton: нет перегруженной функции, принимающей 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(82,57): error C2660: TriggerButton::CheckJob: функция не принимает 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,7): message : см. объявление "TriggerButton::CheckJob"
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(96,124): error C2661: TriggerButton::TriggerButton: нет перегруженной функции, принимающей 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(98,57): error C2660: TriggerButton::CheckJob: функция не принимает 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,7): message : см. объявление "TriggerButton::CheckJob"
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(112,94): error C2661: TriggerButton::TriggerButton: нет перегруженной функции, принимающей 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(114,2): error C2065: SwitchButton: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(114,15): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "test"
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(114,15): error C3861: test: идентификатор не найден
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(116,57): error C2660: TriggerButton::CheckJob: функция не принимает 3 аргументов
+C:\Users\prikh\source\repos\PHEngine\Objects.h(80,7): message : см. объявление "TriggerButton::CheckJob"
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(117,2): error C2065: test: необъявленный идентификатор
+C:\Users\prikh\source\repos\PHEngine\Scene.cpp(123,2): error C2065: test: необъявленный идентификатор
   Создание кода...
-  PHEngine.vcxproj -> C:\Users\prikh\source\repos\PHEngine\Debug\PHEngine.exe

@@ -1,6 +1,8 @@
 #include "Addons.h"
 #include "raylib.h"
-//#include "PHEngine.cpp"
+#include "Objects.h"
+
+
 
 
 
@@ -110,3 +112,23 @@ bool Sell::Getalive()
 {
     return alive;
 }
+
+//SwitcherTrigger::SwitcherTrigger()
+//{
+//    IsActive = 0;
+//}
+//
+//SwitcherTrigger::SwitcherTrigger(bool IsActive)
+//{
+//    this->IsActive = IsActive;
+//}
+//
+//bool SwitcherTrigger::GetActive()
+//{
+//    return IsActive;
+//}
+//
+//void SwitcherTrigger::Job()
+//{
+//    IsActive = !IsActive;
+//}

@@ -19,7 +19,7 @@
 
 
 
-void MainScene(SceneSwitcherTrigger &trigger, std::vector<std::vector<Sell>> &LifeHeight, int count, Texture2D Sells, int &lifecount);
+void MainScene(SceneSwitcherTrigger &trigger/*,std::vector<std::vector<Sell>> &LifeHeight, int count, Texture2D Sells, int &lifecount*/);
 
 void SettingsScene(SceneSwitcherTrigger &trigger);
 
@@ -28,4 +28,4 @@ void WorkShopScene(SceneSwitcherTrigger& trigger);
 void CreditsScene(SceneSwitcherTrigger& trigger);
 
 
-void MainLobby(SceneSwitcherTrigger& trigger);
+void MainLobby(SceneSwitcherTrigger& trigger/*, SwitcherTrigger& swTrigger*/);

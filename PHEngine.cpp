@@ -5,6 +5,7 @@
 #include "Objects.h"
 #include "Addons.h"
 #include "Scene.h"
+#include <unordered_map>
 
 
 int main()
@@ -13,11 +14,13 @@ int main()
     const int screenWidth = GetMonitorWidth(GetCurrentMonitor());
     const int screenHeight = GetMonitorHeight(GetCurrentMonitor());
 
+    const int MainButtons = 4;
+
     InitWindow(screenWidth, screenHeight, "PHEngine");
 
     SetWindowPosition(0, 30);
 
-    Texture Sells = LoadTextureFromImage(GenImageColor(30, 30, WHITE));
+    /*Texture Sells = LoadTextureFromImage(GenImageColor(30, 30, WHITE));
 
     std::vector<std::vector<Sell>> LifeHeight;
     LifeHeight.reserve(192);
@@ -35,7 +38,10 @@ int main()
         LifeHeight.push_back(q);
     }
 
-    int maincount = 0, lifecount = 0;
+    int maincount = 0, lifecount = 0;*/
+
+    std::unordered_map<std::string,std::vector<Button>> MainBI;
+    //InitMainButtons(MainBI);
     //std::vector<Button> Main = InitMainMenuButtons();
 
     Camera2D camera = { 0 };
@@ -44,17 +50,14 @@ int main()
     SetTargetFPS(60);
 
     SceneSwitcherTrigger MAINTRIGGER;
+    //SwitcherTrigger testtrigger;
 
     while (!WindowShouldClose())        
     {
         //Just main menu, i will complete it later
         if (MAINTRIGGER.GetScene() == MAINMENU)
         {
-            MainScene(MAINTRIGGER, LifeHeight, maincount, Sells, lifecount);
-        }
-        if (MAINTRIGGER.GetScene() == PHLOBBY)
-        {
-            MainLobby(MAINTRIGGER);
+            MainScene(MAINTRIGGER /*,LifeHeight, maincount, Sells, lifecount*/);
         }
         if (MAINTRIGGER.GetScene() == SETTINGS)
         {
@@ -68,11 +71,16 @@ int main()
         {
             CreditsScene(MAINTRIGGER);
         }
-        
+        //---------------------------------------
+
+        if (MAINTRIGGER.GetScene() == PHLOBBY)
+        {
+            MainLobby(MAINTRIGGER/*, testtrigger*/);
+        }
         
     }
     
-    UnloadTexture(Sells);
+    //UnloadTexture(Sells);
 
     
     CloseWindow();        

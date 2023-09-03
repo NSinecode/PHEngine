@@ -99,6 +99,16 @@ Point::Point(Vector2 Position, Vector2 CenterPosition)
 	PhPosition.y = Position.y - CenterPosition.y;
 }
 
+void Point::SetX(float X)
+{
+	Position.x = X;
+}
+
+void Point::SetY(float Y)
+{
+	Position.y = Y;
+}
+
 void Point::SetV(float V)
 {
 	this->V = V;
@@ -129,6 +139,16 @@ void Point::SetCenterPosition(Vector2 CenterPosition)
 void Point::SetCenterPosition(Point& CenterPoint)
 {
 	this->CenterPosition = CenterPoint.GetCenterPosition();
+}
+
+float Point::GetX()
+{
+	return Position.x;
+}
+
+float Point::GetY()
+{
+	return Position.y;
 }
 
 float Point::GetV()
@@ -290,6 +310,21 @@ void SimpleHitBox::SetCenter(Vector2 Center)
 	MaxXMaxY.SetPosition(b);
 }
 
+void SimpleHitBox::SetCenterN(Vector2 Center)
+{
+	this->Center = Center;
+}
+
+void SimpleHitBox::SetHeight(float height)
+{
+	this->height = height;
+}
+
+void SimpleHitBox::SetWidth(float width)
+{
+	this->width = width;
+}
+
 Point SimpleHitBox::GetMinXMinY()
 {
 	return MinXMinY;
@@ -316,4 +351,94 @@ bool SimpleHitBox::CheckMouse(Vector2 MousePos)
 		return 0;
 	}
 	
+}
+
+Point PHHitBox::GetMinXMaxY()
+{
+	return MinXMaxY;
+}
+
+Point PHHitBox::GetMaxXMinY()
+{
+	return MaxXMinY;
+}
+
+void PHHitBox::Resize(Vector2 Delta)
+{
+	GetMaxXMaxY().SetX(GetMaxXMaxY().GetX() + Delta.x / 2);
+	MaxXMinY.SetX(MaxXMinY.GetX() + Delta.x / 2);
+
+	GetMinXMinY().SetX(GetMinXMinY().GetX() - Delta.x / 2);
+	MinXMaxY.SetX(MinXMaxY.GetX() - Delta.x / 2);
+
+	SetWidth(GetMaxXMaxY().GetX() - GetMinXMinY().GetX());
+
+	GetMaxXMaxY().SetY(GetMaxXMaxY().GetY() + Delta.y / 2);
+	MinXMaxY.SetY(MinXMaxY.GetY() + Delta.y / 2);
+
+	GetMinXMinY().SetY(GetMaxXMaxY().GetY() - Delta.y / 2);
+	MaxXMinY.SetY(MaxXMinY.GetY() - Delta.y / 2);
+
+	SetHeight(GetMaxXMaxY().GetY() - GetMinXMinY().GetY());
+}
+
+void PHHitBox::ResizeWIDTH(float DeltaWIDTH)
+{
+	GetMaxXMaxY().SetX(GetMaxXMaxY().GetX() + DeltaWIDTH / 2);
+	MaxXMinY.SetX(MaxXMinY.GetX() + DeltaWIDTH / 2);
+
+	GetMinXMinY().SetX(GetMinXMinY().GetX() - DeltaWIDTH / 2);
+	MinXMaxY.SetX(MinXMaxY.GetX() - DeltaWIDTH / 2);
+
+	SetWidth(GetMaxXMaxY().GetX() - GetMinXMinY().GetX());
+}
+
+void PHHitBox::ResizeHEIGHT(float DeltaHEIGHT)
+{
+	GetMaxXMaxY().SetY(GetMaxXMaxY().GetY() + DeltaHEIGHT / 2);
+	MinXMaxY.SetY(MinXMaxY.GetY() + DeltaHEIGHT / 2);
+
+	GetMinXMinY().SetY(GetMaxXMaxY().GetY() - DeltaHEIGHT / 2);
+	MaxXMinY.SetY(MaxXMinY.GetY() - DeltaHEIGHT / 2);
+
+	SetHeight(GetMaxXMaxY().GetY() - GetMinXMinY().GetY());
+}
+
+void PHHitBox::Move(float xd, float yd)
+{
+	SetCenterN({ xd,yd });
+
+	GetMinXMinY().SetPosition({ GetMinXMinY().GetX() + xd, GetMinXMinY().GetY() + yd });
+	GetMaxXMaxY().SetPosition({ GetMaxXMaxY().GetX() + xd, GetMaxXMaxY().GetY() + yd });
+
+	MinXMaxY.SetPosition({ MinXMaxY.GetX() + xd, MinXMaxY.GetY() + yd });
+	MaxXMinY.SetPosition({ MaxXMinY.GetX() + xd, MaxXMinY.GetY() + yd });
+}
+
+void PHHitBox::Move(Vector2 posd)
+{
+	float xd = posd.x, yd = posd.y;
+	SetCenterN({ xd,yd });
+
+	GetMinXMinY().SetPosition({ GetMinXMinY().GetX() + xd, GetMinXMinY().GetY() + yd });
+	GetMaxXMaxY().SetPosition({ GetMaxXMaxY().GetX() + xd, GetMaxXMaxY().GetY() + yd });
+
+	MinXMaxY.SetPosition({ MinXMaxY.GetX() + xd, MinXMaxY.GetY() + yd });
+	MaxXMinY.SetPosition({ MaxXMinY.GetX() + xd, MaxXMinY.GetY() + yd });
+}
+
+void PHHitBox::RotateAroundPoint(float Angle, Point CenterOfRotation)
+{
+	MinXMaxY.RotateAroundCenter(CenterOfRotation.GetPosition(), Angle);
+	MaxXMinY.RotateAroundCenter(CenterOfRotation.GetPosition(), Angle);
+	GetMinXMinY().RotateAroundCenter(CenterOfRotation.GetPosition(), Angle);
+	GetMaxXMaxY().RotateAroundCenter(CenterOfRotation.GetPosition(), Angle);
+}
+
+void PHHitBox::RotateAroundCenter(float Angle)
+{
+	MinXMaxY.RotateAroundCenter(GetCenter(), Angle);
+	MaxXMinY.RotateAroundCenter(GetCenter(), Angle);
+	GetMinXMinY().RotateAroundCenter(GetCenter(), Angle);
+	GetMaxXMaxY().RotateAroundCenter(GetCenter(), Angle);
 }

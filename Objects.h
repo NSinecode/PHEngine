@@ -1,12 +1,17 @@
 #pragma once
-#include "HitBox.h"
+//#include "HitBox.h"
 #include <string>
 #include "raylib.h"
+#include "rlgl.h"
 #include "Addons.h"
 #include <vector>
+#include <unordered_map>
 
 #define	REGULAR	  0
 #define	TRIGGERED 1
+#define ACTIVE 2
+
+
 
 
 
@@ -18,6 +23,7 @@ class Button
 {
 public:
 	Button();
+	Button(Button& other);
 	Button(Vector2 Center, float width, float height);
 	Button(Vector2 Center, float width, float height, int FontSize);
 	Button(Vector2 Center, float width, float height, std::string title);
@@ -32,6 +38,7 @@ public:
 	~Button();
 	
 	//Getters and Setters
+	void SetAll(Vector2 Center, float height, std::string title);
 	void SetButtonHitBox(SimpleHitBox HitBox);
 	void SetCenter(Vector2 Center);
 	void SetTitle(std::string title);
@@ -79,4 +86,41 @@ public:
 	
 private:
 	
+};
+
+//class SwitchButton : public Button
+//{
+//public:
+//	SwitchButton() : Button() { GetTexture().push_back(LoadTextureFromImage(GenImageColor(GetWidth(), GetHeight(), DARKBLUE))); };
+//	SwitchButton(Vector2 Center, float width, float height) :Button(Center, width, height) { GetTexture().push_back(LoadTextureFromImage(GenImageColor(GetWidth(), GetHeight(), DARKBLUE))); };
+//	SwitchButton(Vector2 Center, float width, float height, std::string title) :Button(Center, width, height, title) { GetTexture().push_back(LoadTextureFromImage(GenImageColor(GetWidth(), GetHeight(), DARKBLUE))); };
+//	SwitchButton(Vector2 Center, float height, std::string title) :Button(Center, height, title) { GetTexture().push_back(LoadTextureFromImage(GenImageColor(GetWidth(), GetHeight(), DARKBLUE))); };
+//	SwitchButton(Vector2 Center, float height, std::string title, int FrontSize) :Button(Center, height, title, FrontSize) { GetTexture().push_back(LoadTextureFromImage(GenImageColor(GetWidth(), GetHeight(), DARKBLUE))); };
+//
+//	//SwitchButton(Button& other);
+//
+//
+//	void CheckJob(Vector2 MousePos);
+//
+//private:
+//	bool IsActive = 1;
+//};
+
+
+
+//void InitMainButtons(std::unordered_map<std::string, std::vector<Button>>& MainB);
+
+class PhysicsObjRec
+{
+public:
+	PhysicsObjRec();
+
+
+
+
+private:
+	PHHitBox HitBox;
+	
+	float mass, modV, AngleV;
+
 };

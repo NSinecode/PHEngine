@@ -1,9 +1,11 @@
 #pragma once
 #include "HitBox.h"
 #include "raylib.h"
+//#include "Scene.h"
 #include <string>
 #include <vector>
 //#include "Objects.h"
+
 
 Vector2 transformXY2Vec2(float x, float y);
 
@@ -41,7 +43,6 @@ private:
 int CountNeighbours(std::vector<std::vector<Sell>> LifeHeight, int i, int j);
 
 
-
 class Trigger 
 {
 public:
@@ -61,4 +62,15 @@ private:
 	double Scene = 0;
 };
 
-
+//class SwitcherTrigger : public Trigger
+//{
+//public:
+//	SwitcherTrigger();
+//	SwitcherTrigger(bool IsActive);
+//
+//	bool GetActive();
+//
+//	void Job();
+//private:
+//	bool IsActive;
+//}
